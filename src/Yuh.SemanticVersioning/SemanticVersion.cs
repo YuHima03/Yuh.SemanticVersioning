@@ -302,6 +302,12 @@ namespace Yuh.SemanticVersioning
             return Parse(s.AsSpan());
         }
 
+        /// <summary>
+        /// Tries to parse a span of characters into a <see cref="SemanticVersion"/> and returns a value that indicates whether the span is successfully parsed.
+        /// </summary>
+        /// <param name="s">The span of characters to parse into a <see cref="SemanticVersion"/>.</param>
+        /// <param name="result">The result of parsing <paramref name="s"/> if the parsing is successful; otherwise, the default value of the <see cref="SemanticVersion"/> structure.</param>
+        /// <returns><see langword="true"/> if the <paramref name="s"/> is successfully parsed; otherwise, <see langword="false"/>.</returns>
         public static bool TryParse(ReadOnlySpan<char> s, out SemanticVersion result)
         {
             try
@@ -316,6 +322,12 @@ namespace Yuh.SemanticVersioning
             }
         }
 
+        /// <summary>
+        /// Tries to parse a string into a <see cref="SemanticVersion"/> and returns a value that indicates whether the span is successfully parsed.
+        /// </summary>
+        /// <param name="s">The string to parse into a <see cref="SemanticVersion"/>.</param>
+        /// <param name="result">The result of parsing <paramref name="s"/> if the parsing is successful; otherwise, the default value of the <see cref="SemanticVersion"/> structure.</param>
+        /// <returns><see langword="true"/> if the <paramref name="s"/> is successfully parsed; otherwise, <see langword="false"/>.</returns>
         public static bool TryParse([NotNullWhen(true)] string? s, out SemanticVersion result)
         {
             return TryParse(s.AsSpan(), out result);
