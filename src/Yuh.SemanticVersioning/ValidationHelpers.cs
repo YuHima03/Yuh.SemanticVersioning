@@ -19,7 +19,7 @@
 
                 foreach (var c in identifier)
                 {
-                    var lowerC = (char)(c | 0x40);
+                    var lowerC = (char)(c | 0x20);
 
                     if (c != '-' && (c < '0' || '9' < c) && (lowerC < 'a' || 'z' < lowerC)) // c is not [0-9A-Za-z-]
                     {
@@ -47,7 +47,7 @@
                 bool isNumericIdentifier = true;
                 foreach (var c in identifier)
                 {
-                    var lowerC = (char)(c | 0x40);
+                    var lowerC = (char)(c | 0x20);
 
                     if (c == '-' || ('a' <= lowerC && lowerC <= 'Z')) // c is [A-Za-z-]
                     {
