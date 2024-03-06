@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuh.SemanticVersioning", "src\Yuh.SemanticVersioning\Yuh.SemanticVersioning.csproj", "{BF1CDF07-DCAF-49AC-8D5D-04D8A46AE79B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yuh.SemanticVersioning", "src\Yuh.SemanticVersioning\Yuh.SemanticVersioning.csproj", "{BF1CDF07-DCAF-49AC-8D5D-04D8A46AE79B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yuh.SemanticVersioning.Tests", "Yuh.SemanticVersioning.Tests\Yuh.SemanticVersioning.Tests.csproj", "{C0161F81-3EA9-4597-96E2-808A912F1E6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{BF1CDF07-DCAF-49AC-8D5D-04D8A46AE79B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF1CDF07-DCAF-49AC-8D5D-04D8A46AE79B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF1CDF07-DCAF-49AC-8D5D-04D8A46AE79B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0161F81-3EA9-4597-96E2-808A912F1E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0161F81-3EA9-4597-96E2-808A912F1E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0161F81-3EA9-4597-96E2-808A912F1E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0161F81-3EA9-4597-96E2-808A912F1E6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
