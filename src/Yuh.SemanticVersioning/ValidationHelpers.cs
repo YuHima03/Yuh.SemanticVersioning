@@ -49,7 +49,7 @@
                 {
                     var lowerC = (char)(c | 0x20);
 
-                    if (c == '-' || ('a' <= lowerC && lowerC <= 'Z')) // c is [A-Za-z-]
+                    if (c == '-' || ((uint)(lowerC - 'a') <= ('z' - 'a'))) // c is [A-Za-z-]
                     {
                         isNumericIdentifier = false;
                     }
