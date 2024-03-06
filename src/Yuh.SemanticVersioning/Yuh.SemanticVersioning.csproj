@@ -7,12 +7,29 @@
     <Nullable>enable</Nullable>
     <Title>$(AssemblyName)</Title>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>0.1.0</Version>
-    <AssemblyVersion>0.1.0.0</AssemblyVersion>
-    <FileVersion>0.1.0.0</FileVersion>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
     <RepositoryType>git</RepositoryType>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageTags>semantic-versioning;version;semantic-version</PackageTags>
+    <Description>Provides a structure that represents a version that follows Semantic-Versioning-2.0.0.</Description>
+    <Copyright>(C) 2024 YuHima</Copyright>
+    <RepositoryUrl>https://github.com/YuHima03/Yuh.SemanticVersioning</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <IncludeSymbols>False</IncludeSymbols>
+    <SignAssembly>False</SignAssembly>
+    <Authors>YuHima</Authors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
