@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Yuh.SemanticVersioning\Yuh.SemanticVersioning.csproj" />
+    <ProjectReference Include="..\Yuh.SemanticVersioning\Yuh.SemanticVersioning.csproj" />
   </ItemGroup>
 
 </Project>
