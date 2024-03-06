@@ -139,8 +139,8 @@ namespace Yuh.SemanticVersioning
         {
             return (this == other) switch
             {
-                true => (this < other) ? -1 : 1,
-                false => 0
+                true => 0,
+                false => (this < other) ? -1 : 1
             };
         }
 
