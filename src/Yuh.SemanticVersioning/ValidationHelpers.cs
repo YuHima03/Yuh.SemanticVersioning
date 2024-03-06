@@ -14,7 +14,7 @@
             {
                 if (string.IsNullOrEmpty(identifier))
                 {
-                    throw new FormatException("The string has consecutive periods.");
+                    ThrowHelpers.ThrowFormatException("The string has consecutive periods.");
                 }
 
                 foreach (var c in identifier)
@@ -23,7 +23,7 @@
 
                     if (c != '-' && (c < '0' || '9' < c) && (lowerC < 'a' || 'z' < lowerC)) // c is not [0-9A-Za-z-]
                     {
-                        throw new FormatException("The string has an invalid char.");
+                        ThrowHelpers.ThrowFormatException("The string has an invalid char.");
                     }
                 }
             }
@@ -41,7 +41,7 @@
             {
                 if (string.IsNullOrEmpty(identifier))
                 {
-                    throw new FormatException("The string has consecutive periods.");
+                    ThrowHelpers.ThrowFormatException("The string has consecutive periods.");
                 }
 
                 bool isNumericIdentifier = true;
@@ -55,13 +55,13 @@
                     }
                     else if (c < '0' || '9' < c) // c is NOT [0-9]
                     {
-                        throw new FormatException("The string has an invalid char.");
+                        ThrowHelpers.ThrowFormatException("The string has an invalid char.");
                     }
                 }
 
                 if (isNumericIdentifier && identifier.StartsWith('0'))
                 {
-                    throw new FormatException("The string has a numeric identifier that starts with 0.");
+                    ThrowHelpers.ThrowFormatException("The string has a numeric identifier that starts with 0.");
                 }
             }
         }
